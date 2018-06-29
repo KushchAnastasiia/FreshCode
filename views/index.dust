@@ -1,7 +1,6 @@
 <!--Таблиця-->
-<!--Зміст таблиці -->
 <div class="container pb-5">
-<!-- <div class="table-responsive"> -->
+<div class="table-responsive">
 <table class="table table-hover" matSort (matSortChange)="sortData($event)">
     <thead>
         <tr>
@@ -16,42 +15,66 @@
     <!--Фотографія користувача-->
     <tr>
       <td>
-        <img src={img_link} class="rounded-circle img-fluid fotoUsers mr-3"> {first_name} {last_name}
+        <img src={img_link} class="fotoUsers mr-3"> {first_name} {last_name}
       </td>
       <td>{domain} {role}</td>
       <td>{last}</td>
       <td>
          <!--Контекстне меню для таблиці-->
-         <div class="dropdown">
-            <i class="material-icons more_vert" id="dropdownMenuButton" data-toggle="dropdown"> more_vert </i>
-         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <button class="dropdown-item">Reset password</button>          
-            <button class="dropdown-item edit-user" data-toggle="modal" data-target="#editFormModal" 
-            data-id="{id}" 
-            data-first-name="{first_name}" 
-            data-last-name="{last_name}"    
-            data-domain="{domain}"
-            data-email="{email}"
-            data-password="{password}"
-            data-username="{username}"
-            data-last="{last}"
-            
-            >
-                Update user
-            </button>
-
-            <button class="dropdown-item delete-user" data-id="{id}">Delete user</button>
-            <button class="dropdown-item">Suspend user</button>
-         </div>
-         </div>
+         {@eq key=roleS value="manager"}
+            {@eq key=firstname value=first_name}
+                {@eq key=lastname value=last_name}
+                <div class="dropdown">
+                        <i class="material-icons more_vert" id="dropdownMenuButton" data-toggle="dropdown"> more_vert </i>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button class="dropdown-item">Reset password</button>          
+                        <button class="dropdown-item edit-user" data-toggle="modal" data-target="#editFormModal" 
+                        data-id="{id}" 
+                        data-first-name="{first_name}" 
+                        data-last-name="{last_name}"    
+                        data-domain="{domain}"
+                        data-email="{email}"
+                        data-password="{password}"
+                        data-username="{username}"
+                        data-last="{last}"
+                        >
+                            Update user
+                        </button>
+                        <button class="dropdown-item delete-user" data-id="{id}">Delete user</button>
+                        <button class="dropdown-item">Suspend user</button>
+                     </div>
+                     </div>
+                {/eq}
+            {/eq}
+        {:else}
+            {@eq key=roleS value="admin"}
+                <div class="dropdown">
+                    <i class="material-icons more_vert" id="dropdownMenuButton" data-toggle="dropdown"> more_vert </i>
+                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <button class="dropdown-item">Reset password</button>          
+                    <button class="dropdown-item edit-user" data-toggle="modal" data-target="#editFormModal" 
+                    data-id="{id}" 
+                    data-first-name="{first_name}" 
+                    data-last-name="{last_name}"    
+                    data-domain="{domain}"
+                    data-email="{email}"
+                    data-password="{password}"
+                    data-username="{username}"
+                    data-last="{last}"
+                    >
+                        Update user
+                    </button>
+                    <button class="dropdown-item delete-user" data-id="{id}">Delete user</button>
+                    <button class="dropdown-item">Suspend user</button>
+                 </div>
+                 </div>
+            {/eq}
+        {/eq}
          </td>
     </tr>
-
     {/users}
     </tbody>
     {>"editModal" /}
-     
-
 </table>
 </div>
 </div>

@@ -26,3 +26,23 @@
     transition: color ease .3s;
 }
 
+/*Стилі для кнопки закриття*/
+.clear{
+    font-size: 30px;
+}
+.ltext{
+    display:inline-block;
+}
+
+#editFormModal {
+    top:5%;
+    left: 60%;
+    
+}
+.modal-backdrop.show {
+    opacity: 0;
+}
+.container{
+    height: 100%;
+
+}

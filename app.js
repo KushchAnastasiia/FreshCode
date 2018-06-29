@@ -25,33 +25,43 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-for_test = [
-    {
-    id: 1,
-    first_name: "hui",
-    last_name: "sobaka",
-    domain: "loh",
-    email: "pidor@gmail.com",
-    password: "freshcode-gavno",
-    username: "umor",
-    last: "nikogda"
-    },
-    {
-    id: 2,
-    first_name: "pipirka",
-    last_name: "sobaka",
-    domain: "aloh",
-    email: "pidor@gmail.com",
-    password: "freshcode-gavno",
-    username: "umor",
-    last: "nikogda"
-    }          
-]
+var users;
+
+var role = "user";
+var logined = "false";
+var first_name = "";
+var last_name = "";
+
+app.post('/login', function(req, res){
+    // res.send(req.body.username + "  " + req.body.password)
+    for(var usr in users){
+        // res.send(users[usr])
+        if(users[usr]["username"].replace(/\s/g, '') == req.body.username && users[usr]["password"].replace(/\s/g, '') == req.body.password){
+
+            role = users[usr]["role"].replace(/\s/g, '');
+            first_name = users[usr]["first_name"];
+            last_name = users[usr]["last_name"];
+            logined = "true";
+            // res.send("found  " + for_test[usr]["username"] + "  " + for_test[usr]["password"] + "  " + for_test[usr]["role"]);
+            res.redirect('/')
+        }
+    }
+})
+
+
+
+app.get('/logout', function(req, res){
+    role = "user";
+    logined = "false";
+    first_name = "";
+    last_name = "";
+    res.redirect('/')
+
+})
 
 app.get('/', function(req, res){
     // res.render('index')
     //PG Connect
-
     const client = new pg.Client(connectStr);
     client.connect()
 
@@ -59,11 +69,18 @@ app.get('/', function(req, res){
         if (err){
             return console.error('error running query', err)
         }
-        res.render("layout", {users: result.rows})
-        // res.render("layout", {users: for_test})
+        // res.render("layout", {users: result.rows})
+        users = result.rows;
+        res.render("layout", {
+            users: users,
+            roleS: role,
+            logined: logined,
+            firstname: first_name,
+            lastname: last_name
+        })
         // res.send(result.rows)
-
         client.end()
+
     })
 
 })

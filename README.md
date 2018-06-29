@@ -1,2 +1,0 @@
-# FreshCode
-Task for FreshCode
