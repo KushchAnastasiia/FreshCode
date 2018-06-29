@@ -119,9 +119,12 @@ app.post('/add', function(req, res){
 
         const client = new pg.Client(connectStr);
         client.connect()
-    
-        client.query('INSERT INTO users(first_name, last_name, domain, email, password, username, last) VALUES($1, $2, $3, $4, $5, $6, $7)',
-     [req.body.first_name, req.body.last_name, req.body.domain, req.body.email, req.body.password, req.body.username, req.body.last],
+        var imagelink = "https://icons8.com/iconizer/files/Crystal_Project/orig/personal.png";
+        if (req.body.image_link != ""){
+            imagelink = req.body.image_link;
+        }
+        client.query('INSERT INTO users(first_name, last_name, domain, email, password, username, last, img_link) VALUES($1, $2, $3, $4, $5, $6, $7, $8)',
+     [req.body.first_name, req.body.last_name, req.body.domain, req.body.email, req.body.password, req.body.username, req.body.last, imagelink],
      function(err, result){
             if (err){
                 return console.error('error running query', err)

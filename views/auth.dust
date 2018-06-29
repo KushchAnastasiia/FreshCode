@@ -7,27 +7,28 @@
         <div class="modal-content">
             <div class="modal-body autoBody">
                 <form class="form-auto" action="/login" method="POST">
-                    <img  src="/imgs/Untitled.png" alt="logo" class="mb-4 mt-4 center-block">
-                    <!--Основна частина модального вікна-->
-                    <h1 class="caption p-3">Login</h1>
+                    <img  src="/imgs/Logo2.png" alt="logo" class="  mt-4 center-block logo">
+                    <!--Основна частина модального вікна-->                  
+                    <h2 class="caption p-3">Login</h2>
                     <!--Поля для вводу-->
                     <div class="input-group">
                         <span class="triangle ml-2">&#8227;</span>
                         <input type="username" id="inputUsername" name="username" class="form-control" placeholder="Enter username">
                     </div>
+
                     <div class="input-group">
-                        <span class="triangle pl-2">&#8227;</span>
+                        <span class="triangle ml-2">&#8227;</span>
                         <input type="password" id="inputpassword" name="password" class="form-control" placeholder="Enter password">
                     </div>
                     <!--Кнопка для входу-->
                     <button class="login center-block mt-5" type="submit">
                         <span class="arrow">&#10139;</span>
                     </button>
-                    <div class="pt-5">
-                        <a href="#">Forgotten access details?</a>
+                    <div class="pt-5" >
+                        <a href="#" style="color:black;">Forgotten access details?</a>
                     </div>
                 </form>
             </div>
+            </div>
         </div>
     </div>
-</div>

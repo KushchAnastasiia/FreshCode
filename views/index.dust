@@ -17,7 +17,7 @@
       <td>
         <img src={img_link} class="fotoUsers mr-3"> {first_name} {last_name}
       </td>
-      <td>{domain} {role}</td>
+      <td>{domain}</td>
       <td>{last}</td>
       <td>
          <!--Контекстне меню для таблиці-->

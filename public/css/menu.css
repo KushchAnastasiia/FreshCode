@@ -1,20 +1,30 @@
+h1{
+  font-family: 'Times New Roman', Times, serif; 
+  font-style: italic; 
+  margin: 0px;
+}
+.users{
+  color: #0026FF ;
+}
+.arrow2{
+  font-size: 40px;
+  font-style:italic;
+}
+/* Для випадаючих списків */
 .dropdown{
     display: inline-block;
     margin: 10px 0px 0px 10px;
     font-size: 16px;
-   }
-  h1{
-    font-family: 'Times New Roman', Times, serif; 
-    font-style: italic; 
-    margin: 0px;
-  }
-  nav{
-    border-bottom: 1px solid black; 
-    padding: 0px;
-    margin: 0px;
-  }
-  .knopka{
-    background-color: white;
-    border: white;
-    border-bottom: 1px solid black;
-  }
+}
+nav{
+  border-bottom: 1px solid black; 
+  padding: 0px;
+  margin: 0px;
+}
+.knopka{
+  background-color: white;
+  border: white;
+  border-bottom: 1px solid black;
+}
+  
+

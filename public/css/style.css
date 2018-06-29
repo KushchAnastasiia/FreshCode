@@ -1,7 +1,7 @@
 .header{
   background-color: #D7D8EA;
 }
-/*Кнопки додавання користувача*/
+/*Кнопки додавання та авторизації користувача*/
 .material-icons{
   cursor: pointer;
   font-size: 50px;  
@@ -22,15 +22,16 @@ body,html {
   float: left;
   min-height: 100%;
 }
+
 /* Таблиця */
 /* Стилі для заголовка таблиці */
 thead{
-  background-color:#6B052A;
-  color: white;
+  /* background-color:#6B052A;
+  color: white; */
 }
 /* Стилі для тіла таблиці */
 tbody{
-  background-color:#FCE8EB;
+  /* background-color:#FCE8EB; */
   vertical-align: middle;
 }
 /*Стилі для іконоки контекстного меню таблиці*/
@@ -43,32 +44,4 @@ tbody{
   height: 50px;
 }
 
-/* Стилі для редагування користувача */
-/*Стилі для верхнього тексту*/
-.lead{
-  font-weight: bold;
-}
-.domain{
-    color: darkturquoise;
-    font-weight: bold;
-    text-decoration: underline;
-}
-/*Стилі для нижнього тексту*/
-.password{
-    color: darkturquoise;
-    text-decoration: underline;
-}
-/*Стилі для */
-.checkbox {
-    content: "\2713";
-    display: inline-block;
-    font-size: 20px;    
-    line-height: 22px;
-    margin: -5px 5px 0 0;
-    height: 20px;
-    width: 20px;
-    text-align: center;
-    vertical-align: middle;
-    transition: color ease .3s;
-}
 

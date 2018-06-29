@@ -1,60 +1,50 @@
-
 <!--Меню(Заголовок+3Випадаючих списки для вибору)-->
 <div class="container-fluid">
-<nav class="navbar navbar-expand-lg navbar-light">
-
-    <h1 class=" users pl-5">Users {firstname}  {lastname}</h1>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        {@eq key=logined value="true"}
+            <h1 class=" users pl-5 pr-3"> Users </h1> <span class="arrow2"> &#8250; {firstname}  {lastname}</span>
+        {:else}
+            <h1 class="pl-5">Users </h1>
+        {/eq}
 
         <!--Згорнути випадаючі списки меню на маленькому екрані-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!--Випадаючі списки меню-->
-<div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-    <ul class="navbar-nav pr-5">
-        <li class="nav-item dropdown">
-               
-                <!--All roles-->
-            <div class="dropdown">
-                <button class="knopka dropdown-toggle" type="button" id="dropdownMenuButton" 
-                data-toggle="dropdown"> All Roles 
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">User</a>
-                    <a class="dropdown-item" href="#">Manager</a>
-                    <a class="dropdown-item" href="#">Admin</a>
-                    
-                </div>
-            </div>
-                    
-            <!--All Domains-->
-            <div class="dropdown">
-                <button class="knopka dropdown-toggle" type="button" id="dropdownMenuButton" 
-                data-toggle="dropdown"> All Domains      
-                </button>
-                
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    {#users}
-                      <a class="dropdown-item" href="#">{domain}</a>
-                    {/users}
-                </div>
-                
-            </div>
-            
-            <!--Active User-->
-            <div class="dropdown">
-                <button class="knopka dropdown-toggle" type="button" id="dropdownMenuButton" 
-                data-toggle="dropdown"> Active User 
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">1</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                </div>
-            </div>
-        </li>
-    </ul>
-</div>
-</nav>
+        <!--Випадаючі списки меню-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+            <ul class="navbar-nav pr-5">
+                <li class="nav-item dropdown">
+                    <!--All roles-->
+                    <div class="dropdown">
+                    <button class="knopka dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"> All Roles </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">User</a>
+                            <a class="dropdown-item" href="#">Manager</a>
+                            <a class="dropdown-item" href="#">Admin</a>
+                        </div>
+                    </div>
+                    <!--All Domains-->
+                    <div class="dropdown">
+                    <button class="knopka dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"> All Domains </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        {#users}
+                            <a class="dropdown-item" href="#">{domain}</a>
+                        {/users}
+                        </div>
+                    </div>
+                    <!--Active User-->
+                    <div class="dropdown">
+                    <button class="knopka dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"> Active User </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">1</a>
+                            <a class="dropdown-item" href="#">2</a>
+                            <a class="dropdown-item" href="#">3</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>

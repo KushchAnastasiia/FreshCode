@@ -10,6 +10,7 @@
   "author": "nastya",
   "license": "ISC",
   "dependencies": {
+    "autosize-input": "^1.0.2",
     "body-parser": "*",
     "browserify": "^16.2.2",
     "consolidate": "*",

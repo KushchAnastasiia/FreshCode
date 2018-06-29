@@ -1,4 +1,31 @@
+/* Стилі для редагування користувача */
+#editFormModal {
+    top:5%;
+    left: 60%;  
+}
+.modal1{
+    border-left: 1px solid black;
+    background-color:white;
+    margin-top: 2.2%;
+}
+.modal-backdrop.show {
+    opacity: 0;
+}
+.mContent{
+    border: transparent;
+    background-color: transparent;
+    padding: 0px 5px 0px 5px;
+}
+
+/*Стилі для кнопки закриття*/
+.clear{
+    font-size: 30px;
+}
 /*Стилі для верхнього тексту*/
+.nameUser{
+   border: transparent;
+    font-size: 20px;
+}
 .lead{
   font-weight: bold;
 }
@@ -12,7 +39,7 @@
     color: darkturquoise;
     text-decoration: underline;
 }
-/*Стилі для */
+/*Стилі для Checkbox*/
 .checkbox {
     content: "\2713";
     display: inline-block;
@@ -25,24 +52,8 @@
     vertical-align: middle;
     transition: color ease .3s;
 }
-
-/*Стилі для кнопки закриття*/
-.clear{
-    font-size: 30px;
-}
+/* Стилі для надпису Checkbox */
 .ltext{
     display:inline-block;
 }
 
-#editFormModal {
-    top:5%;
-    left: 60%;
-    
-}
-.modal-backdrop.show {
-    opacity: 0;
-}
-.container{
-    height: 100%;
-
-}
