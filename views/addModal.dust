@@ -1,0 +1,65 @@
+
+
+
+<a data-toggle="modal" data-target="#formModal"><i class="material-icons icon-color">add_circle</i> </a>
+
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<form method="POST" action="/add">
+
+<div class="modal-header">
+    <h1 class="modal-title pl-3" id="exampleModalLabel">Add a User</h1>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div class="modal-body">
+    <div class="form-group">
+        <div class="row">
+        <div class="col-md-6">
+            <label>First name</label>
+            <input type="text" class="form-control" name="first_name" />
+        </div>
+        <div class="col-md-6">    
+            <label>Last name</label>
+            <input type="text" class="form-control" name="last_name" />
+        </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>User name</label>
+        <input type="text" class="form-control" name="username" />
+    </div>
+
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" name="password" />
+    </div>
+
+    <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" class="form-control" name="email" />
+    </div>
+
+    <div class="form-group">
+        <label>Domain</label>
+        <input type="text" class="form-control" name="domain" />
+    </div>
+
+    <div class="form-group">
+        <label>Last logined</label>
+        <input type="date" class="form-control" name="last" />
+    </div>
+</div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary save ">Save changes</button>
+    </div>
+</form>
+</div>
+</div>
+</div>

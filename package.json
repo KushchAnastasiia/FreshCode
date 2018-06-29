@@ -1,0 +1,32 @@
+{
+  "name": "almost_final",
+  "version": "1.0.0",
+  "description": "manager",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "nastya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "browserify": "^16.2.2",
+    "consolidate": "*",
+    "create-react-class": "^15.6.3",
+    "dust": "*",
+    "dustjs-helpers": "*",
+    "dustjs-linkedin": "*",
+    "express": "*",
+    "html": "*",
+    "impromptu-react-sidemenu": "^0.1.1",
+    "pg": "*",
+    "react": "^16.4.1",
+    "react-bootstrap-select": "^0.14.0",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "4.0.0",
+    "view": "^1.1.1"
+  }
+}

@@ -1,0 +1,49 @@
+/* Для авторизації */
+/*Модальне вікно*/
+.modal-body{
+  text-align: center;
+  background-color: #DDDCDB;
+}
+
+/*Стилі для заголовку */
+.caption{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  background-color: #3C2D5B;
+  margin: auto;   
+}
+/*Стилі для кнопки входу*/
+.login{
+  background-color: #3C2D5B;
+  border: 1px solid #3C2D5B;
+}
+.arrow{
+  color: white;
+  display: inline-block;
+  font-size: 50px;    
+  line-height: 22px;
+  height: 30px;
+  width: 50px;
+  margin: 5px 5px 0px 0px;
+  text-align: center;
+  vertical-align: middle;
+}
+/*Для трикутників*/
+.input-group{
+  border-left: 1px solid #3C2D5B;
+  border-right: 1px solid #3C2D5B;
+  border-bottom: 1px solid #3C2D5B;
+  background-color: white;
+}
+input{
+  border: 1px solid white;  
+}
+.triangle{
+  color: black;
+  font-size: 60px;
+  border: 1px solid white;  
+  background-color: white;
+  vertical-align: middle;
+  line-height: 30px;
+}

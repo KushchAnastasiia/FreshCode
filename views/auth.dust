@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/auth.css">
+
+<!--Модальне вікно Авторизації-->
+
+<a><i data-toggle="modal" data-target="#myModal" class="material-icons icon-color">account_circle</i></a>
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form class="form-auto">
+                    <img  src="/imgs/Untitled.png" alt="logo" class="mb-4 mt-4 center-block">
+                    <!--Основна частина модального вікна-->
+                    <h1 class="caption p-3">Login</h1>
+                    <!--Поля для вводу-->
+                    <div class="input-group">
+                        <span class="triangle ml-2">&#8227;</span>
+                        <input type="username" id="inputUsername" class="form-control" placeholder="Enter username">
+                    </div>
+                    <div class="input-group">
+                        <span class="triangle pl-2">&#8227;</span>
+                        <input type="password" id="inputpassword" class="form-control" placeholder="Enter password">
+                    </div>
+                    <!--Кнопка для входу-->
+                    <button class="login center-block mt-5" type="button" data-dismiss="modal">
+                        <span class="arrow">&#10139;</span>
+                    </button>
+                    <p class="mt-5">Forgotten access details?</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

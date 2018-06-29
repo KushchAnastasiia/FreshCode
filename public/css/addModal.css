@@ -1,0 +1,33 @@
+/* Добавления пользователя */
+/*Стилі для header*/
+.modal-header{
+  background-color:#3C2D5B;
+  color: white;
+}
+.close{
+  font-size: 35px;
+  color: white;
+}
+h1{
+  font-family: 'Times New Roman', Times, serif; 
+  font-style: italic; 
+}
+/*Стилі для body*/
+.modal-body{
+  background-color:#DDDCDB;
+}
+label{
+  color: black;
+  tab-size: 14px;
+  text-align: left;
+  display: block;
+  padding-left: 5px;
+  margin: 0px;
+}
+/*тилі для footer */
+.modal-footer{
+  background-color:#3C2D5B;
+}
+.save{
+  color: white;
+}

@@ -1,0 +1,40 @@
+    <!-- {>"addModal" /} -->
+    
+    <!-- <div class="card card-body bg-light">
+        <h4>
+            {first_name}{last_name}
+            <button class="btn btn-default pull-right" data-toggle="collapse" href="#recipe_{id}" adia-axpanded="false"
+            aria-controls="recipe_{id}">
+                View
+            </button>
+        </h4>
+        <div class="collapse" id="recipe_{id}">
+            
+            <p>{domain}</p>
+            <p>{last}</p>
+
+        {>"editModal" /}
+            <button class="btn btn-default delete-user" data-id="{id}">
+                Remove
+            </button>
+        </div>
+    </div> -->
+<!--     
+<mat-drawer-container class="example-container" style="height: 100%; min-height: 75vh;">
+        <mat-drawer #drawer mode="side" position="end" style="width: 40%;">
+        
+
+        <div class="border">
+        <div class="mb-2">
+        
+        {>"editusers" /}
+        </div>
+        </div>
+        </mat-drawer> -->
+        
+        <!-- <mat-drawer-content  hasBackdrop=False> -->
+
+
+<!--         
+        </mat-drawer-content>
+        </mat-drawer-container> -->
