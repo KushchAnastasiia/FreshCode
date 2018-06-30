@@ -14,3 +14,14 @@ https://stackblitz.com/edit/mainproject
 3. npm install
 4. npm start
 
+### DB columns:
+1. id
+2. first_name
+3. last_name
+4. domain
+5. email
+6. password
+7. username
+8. last
+9. role
+10. img_link
